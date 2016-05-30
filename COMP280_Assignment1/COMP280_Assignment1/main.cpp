@@ -60,6 +60,8 @@ int main(int argc, const char * argv[]) {
     menuArray[3] = "4. Sum";
     menuArray[4] = "5. Average";
     menuArray[5] = "6. Exit";
+    std::cout<<"Main Menu \n 1. Insert \n 2. Delete \n 3.Display \n 4. Sum \n 5. Average \n 6. Exit \n";
+    std::cout<<"Enter the number of the menu item you would like to select \n";
     
     
 }
