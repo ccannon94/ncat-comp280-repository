@@ -21,18 +21,11 @@ bool List::Empty(){
     }
 }
 
-void List::InsertAtEnd(<#ElementType x#>);{
-a:for(int i = 0; i < MAX; i ++){
-    if(listArray[i] == 0){
-        listArray[i] = x;
-        break a;
-        
-    }
-    }
-    N++;
+void List::InsertAtEnd(ElementType x){
+    listArray[N] = x;
 }
 
-void List::Delete(<#ElementType x#>);{
+void List::Delete(ElementType x){
     //TODO create delete method
     //if value x is in the list, remove x
     for(int i = 0; i < MAX; i++){
@@ -43,7 +36,7 @@ void List::Delete(<#ElementType x#>);{
     }
 }
 
-int List::Sum();{
+int List::Sum(){
     int sum = 0;
     for(int i = 0; i < MAX; i++){
         sum += listArray[i];
@@ -51,7 +44,7 @@ int List::Sum();{
     return sum;
 }
 
-int List::Average();{
+int List::Average(){
     int sum = 0;
     for(int i = 0; i < MAX; i++){
         sum += listArray[i];
