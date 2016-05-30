@@ -53,16 +53,33 @@ int List::Average(){
 }
 
 int main(int argc, const char * argv[]) {
-    std::string menuArray[6];
-    menuArray[0] = "1. Insert";
-    menuArray[1] = "2. Delete";
-    menuArray[2] = "3. Display";
-    menuArray[3] = "4. Sum";
-    menuArray[4] = "5. Average";
-    menuArray[5] = "6. Exit";
+    
     std::cout<<"Main Menu \n 1. Insert \n 2. Delete \n 3.Display \n 4. Sum \n 5. Average \n 6. Exit \n";
     std::cout<<"Enter the number of the menu item you would like to select \n";
     
+    int menuSelection;
     
+    std::cin>>menuSelection;
+    
+    ElementType inValue;
+    
+    if (menuSelection == 1) {
+        std::cout<<"\nEnter the value you would like to add: \n";
+        
+        std::cin>>inValue;
+        List::InsertAtEnd(ElementType inValue); //TODO resolve issue
+    }else if (menuSelection == 2){
+        std::cout<<"\nEnter the value you would like to delete: \n";
+        std::cin>>inValue;
+        //TODO move through array, looking for value, delete value
+    }else if (menuSelection == 3){
+        //TODO complete Display operation
+    }else if (menuSelection == 4){
+        //TODO complete Sum operation
+    }else if (menuSelection == 5){
+        //TODO complete Average operation
+    }else{
+        //TODO complete Exit operation
+    }
 }
 
