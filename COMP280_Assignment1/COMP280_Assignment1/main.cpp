@@ -36,6 +36,13 @@ void List::Delete(ElementType x){
     }
 }
 
+void List::Display(){
+    for (int i = 0; i < MAX; i++) {
+        std::string s = std::to_string(listArray[i]);
+        std::cout<<"\n" + s;
+    }
+}
+
 int List::Sum(){
     int sum = 0;
     for(int i = 0; i < MAX; i++){
@@ -52,8 +59,10 @@ int List::Average(){
     return sum/N;
 }
 
-int main(int argc, const char * argv[]) {
+int main() {
     
+    List myList;
+    for (int i = 0; i < 150; i++) {
     std::cout<<"Main Menu \n 1. Insert \n 2. Delete \n 3.Display \n 4. Sum \n 5. Average \n 6. Exit \n";
     std::cout<<"Enter the number of the menu item you would like to select \n";
     
@@ -63,23 +72,28 @@ int main(int argc, const char * argv[]) {
     
     ElementType inValue;
     
+    
     if (menuSelection == 1) {
         std::cout<<"\nEnter the value you would like to add: \n";
         
         std::cin>>inValue;
-        List::InsertAtEnd(ElementType inValue); //TODO resolve issue
+        myList.InsertAtEnd(inValue);
     }else if (menuSelection == 2){
         std::cout<<"\nEnter the value you would like to delete: \n";
-        std::cin>>inValue;
-        //TODO move through array, looking for value, delete value
+        
+        ElementType delValue;
+        std::cin>>delValue;
+        
+        myList.Delete(delValue);
     }else if (menuSelection == 3){
-        //TODO complete Display operation
+        myList.Display();
     }else if (menuSelection == 4){
-        //TODO complete Sum operation
+        myList.Sum();
     }else if (menuSelection == 5){
-        //TODO complete Average operation
+        myList.Average();
     }else{
-        //TODO complete Exit operation
+        exit(0);
+    }
     }
 }
 
