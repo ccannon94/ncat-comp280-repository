@@ -9,33 +9,61 @@
 #include "List.h"
 
 List::List(){
-    //TODO implement constructor
-    
+    first = new node;
+    first->data = NULL;
 }
 
 bool List::Empty(){
-    //TODO implement Empty() check
-    return true;
+    if (first->data == NULL)
+        return true;
+    return false;
 }
 
 void List::InsertAtEnd(ElementType x){
-    //TODO implement insert function
+    node* current = first;
+    while(current->data != NULL){
+        current = current->next;
+    }
+    node* newNode = new node;
+    current->next = newNode;
+    newNode->data = x;
 }
 
 void List::Delete(ElementType x){
-    //TODO implement Delete function
+    node* current = first;
+    node* nextNode = current->next;
+    while(nextNode->data != x && nextNode->next != NULL){
+        current = current->next;
+        nextNode = nextNode->next;
+    }
+    current->next = nextNode->next;
+    delete nextNode;
 }
 
 void List::Display(){
-    //TODO implement Display function
+    node* current = first;
+    do {
+        std::cout<<current->data<<std::endl;
+    } while (current->next != NULL);
 }
 
 int List::Sum(){
-    //TODO implement Sum
-    return 0;
+    node* current = first;
+    int sum = 0;
+    do {
+        sum += current->data;
+    } while (current->next != NULL);
+    return sum;
 }
 
-int List::Average(){
-    //TODO imeplement Average
-    return 0;
+double List::Average(){
+    node* current = first;
+    double sum = 0.0;
+    double count = 0;
+    
+    do {
+        sum += current->data;
+        count ++;
+    } while (current->next != NULL);
+    return sum / count;
 }

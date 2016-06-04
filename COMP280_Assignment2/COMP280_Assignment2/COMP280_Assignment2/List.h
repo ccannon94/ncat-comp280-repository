@@ -23,7 +23,7 @@ public:
     void Delete(ElementType x);
     void Display();
     int Sum();
-    int Average();
+    double Average();
     
 private:
     node* first;
