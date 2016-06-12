@@ -6,3 +6,27 @@
 //
 
 #include "Stack.h"
+
+Stack::Stack(){
+    
+}
+
+bool Stack::empty(){
+    return true;
+}
+
+void Stack::push(StackElement x){
+    
+}
+
+bool Stack::Top(StackElement & x){
+    return true;
+}
+
+void Stack::pop(){
+    
+}
+
+void Stack::display(){
+    
+}

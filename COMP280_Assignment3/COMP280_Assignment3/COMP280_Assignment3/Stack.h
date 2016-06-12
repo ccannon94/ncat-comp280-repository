@@ -11,8 +11,8 @@ typedef int StackElement;
 
 struct node
 {
-  	 StackElement data;
-    node * next;
+    StackElement data;
+    node* next;
 };
 
 class Stack
@@ -26,5 +26,5 @@ public:
     void display(); //displays the data stored in the stack
     
 private:
-    node * mytop; //pointer to the top of the stack
+    node* mytop; //pointer to the top of the stack
 };

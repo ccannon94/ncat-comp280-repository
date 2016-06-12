@@ -10,8 +10,8 @@ typedef int QueueElement;
 
 struct qnode
 {
-  	 QueueElement data;
-    qnode * next;
+    QueueElement data;
+    qnode* next;
 };
 
 class Queue
@@ -25,6 +25,6 @@ public:
     void display(); //displays the data stored in the Queue from front to back
     
 private:
-    qnode * myfront; //pointer to the front of the queue
-    qnode * myback; //pointer to the back of the queue
+    qnode* myfront; //pointer to the front of the queue
+    qnode* myback; //pointer to the back of the queue
 };
