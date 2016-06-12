@@ -39,9 +39,14 @@ int Queue::Front(QueueElement & x){
 }
 
 void Queue::RemoveQ(){
-    qnode* removed = myfront;
-    myfront = myfront->next;
-    delete removed;
+    if(myfront->next == NULL){
+        myfront->data = NULL;
+        myback = myfront;
+    }else{
+        qnode* removed = myfront;
+        myfront = myfront->next;
+        delete removed;
+    }
 }
 
 void Queue::display(){

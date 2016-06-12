@@ -46,7 +46,7 @@ int main()
     if (S.empty())
         std::cout<<"Stack is empty."<<std::endl;
     
-    /*
+    
     //Remove and display each values on the Queue
     std::cout<<"Removing values from Queue"<<std::endl;
     while (!Q.empty())
@@ -60,5 +60,4 @@ int main()
     
     if (Q.empty())
         std::cout<<"Queue is empty."<<std::endl;
-     */
 }
