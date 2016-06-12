@@ -36,10 +36,14 @@ int Stack::Top(StackElement & x){
 }
 
 void Stack::pop(){
-    node* popped = new node();
-    popped = mytop;
-    mytop = mytop->next;
-    delete popped;
+    if(mytop->next == NULL){
+        mytop->data = NULL;
+    }else{
+        node* popped = new node();
+        popped = mytop;
+        mytop = mytop->next;
+        delete popped;
+    }
 }
 
 void Stack::display(){
