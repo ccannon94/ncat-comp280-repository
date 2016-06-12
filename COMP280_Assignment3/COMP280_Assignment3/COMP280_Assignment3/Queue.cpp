@@ -33,7 +33,7 @@ void Queue::AddQ(QueueElement x){
 }
 
 int Queue::Front(QueueElement & x){
-    return 0;
+    return myfront->data;
 }
 
 void Queue::RemoveQ(){

@@ -32,7 +32,7 @@ void Stack::push(StackElement x){
 }
 
 int Stack::Top(StackElement & x){
-    return 0;
+    return mytop->data;
 }
 
 void Stack::pop(){
