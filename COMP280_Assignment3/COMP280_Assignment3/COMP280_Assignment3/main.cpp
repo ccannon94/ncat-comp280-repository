@@ -22,6 +22,7 @@ int main()
         Q.AddQ(n);
     }
     
+    
     //Display the content of the stack and queue to the screen
     std::cout<<"Contents of Stack"<<std::endl;
     S.display();
@@ -30,6 +31,7 @@ int main()
     Q.display();
     std::cout<<endl<<std::endl;
     
+
     //Remove and display each value on the stack
     std::cout<<"Removing values from Stack"<<std::endl;
     while (!S.empty())
@@ -44,6 +46,7 @@ int main()
     if (S.empty())
         std::cout<<"Stack is empty."<<std::endl;
     
+    /*
     //Remove and display each values on the Queue
     std::cout<<"Removing values from Queue"<<std::endl;
     while (!Q.empty())
@@ -57,4 +60,5 @@ int main()
     
     if (Q.empty())
         std::cout<<"Queue is empty."<<std::endl;
+     */
 }

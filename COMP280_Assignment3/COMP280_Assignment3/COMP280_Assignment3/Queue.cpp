@@ -15,7 +15,7 @@ Queue::Queue(){
 }
 
 bool Queue::empty(){
-    if(myfront == myback)
+    if(myfront->data == NULL)
         return true;
     return false;
 }
@@ -24,11 +24,13 @@ void Queue::AddQ(QueueElement x){
     if(empty()){
         myfront->data = x;
         myfront->next = myback;
+    }else if(myback->data == NULL){
+        myback->data = x;
     }else{
-        qnode* newQNode = new qnode();
-        newQNode->data = x;
-        myback->next = newQNode;
-        myback = newQNode;
+        qnode* newQ = new qnode();
+        newQ->data = x;
+        myback->next=newQ;
+        myback=newQ;
     }
 }
 
@@ -44,12 +46,16 @@ void Queue::RemoveQ(){
 
 void Queue::display(){
     std::cout<<std::endl;
-    qnode* current = new qnode();
-    current = myfront;
-    std::cout<<current->data<<std::endl;
-    while(current != myback){
+    if(empty()){
+        std::cout<<"This queue is empty."<<std::endl;
+    }else{
+        qnode* current = new qnode();
+        current = myfront;
         std::cout<<current->data<<std::endl;
-        current = current->next;
+        while(current != myback){
+            current = current->next;
+            std::cout<<current->data<<std::endl;
+        }
     }
     std::cout<<std::endl;
 }
