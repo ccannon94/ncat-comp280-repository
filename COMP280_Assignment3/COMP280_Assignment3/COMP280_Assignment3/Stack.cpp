@@ -43,5 +43,13 @@ void Stack::pop(){
 }
 
 void Stack::display(){
-    
+    std::cout<<std::endl;
+    node* current = new node();
+    current = mytop;
+    std::cout<<current->data<<std::endl;
+    while(current->next != NULL){
+        current = current->next;
+        std::cout<<current->data<<std::endl;
+    }
+    std::cout<<std::endl;
 }

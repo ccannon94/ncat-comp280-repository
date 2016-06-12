@@ -43,5 +43,13 @@ void Queue::RemoveQ(){
 }
 
 void Queue::display(){
-    
+    std::cout<<std::endl;
+    qnode* current = new qnode();
+    current = myfront;
+    std::cout<<current->data<<std::endl;
+    while(current != myback){
+        std::cout<<current->data<<std::endl;
+        current = current->next;
+    }
+    std::cout<<std::endl;
 }
