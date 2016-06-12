@@ -32,8 +32,8 @@ void Queue::AddQ(QueueElement x){
     }
 }
 
-bool Queue::Front(QueueElement & x){
-    return true;
+int Queue::Front(QueueElement & x){
+    return 0;
 }
 
 void Queue::RemoveQ(){

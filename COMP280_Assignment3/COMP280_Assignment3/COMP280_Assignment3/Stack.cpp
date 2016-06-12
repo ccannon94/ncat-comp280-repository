@@ -31,8 +31,8 @@ void Stack::push(StackElement x){
     }
 }
 
-bool Stack::Top(StackElement & x){
-    return true;
+int Stack::Top(StackElement & x){
+    return 0;
 }
 
 void Stack::pop(){

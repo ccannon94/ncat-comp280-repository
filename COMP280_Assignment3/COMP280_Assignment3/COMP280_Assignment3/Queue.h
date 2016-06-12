@@ -20,7 +20,7 @@ public:
     Queue(); // create an empty Queue
     bool empty(); //return true if Queue is empty, otherwise return false
     void AddQ(QueueElement x); //add a new value to the back of the Queue
-    bool Front (QueueElement & x); //retrieve the data at the front of the Queue
+    int Front (QueueElement & x); //retrieve the data at the front of the Queue
     void RemoveQ(); //remove the value at the front of the Queue
     void display(); //displays the data stored in the Queue from front to back
     
