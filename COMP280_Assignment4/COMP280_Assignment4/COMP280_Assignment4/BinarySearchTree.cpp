@@ -36,3 +36,20 @@ void BinarySearchTree::Insert(int dishNum){
     current->dishNumber = insert->dishNumber;
     current->counter++;
 }
+
+bool BinarySearchTree::IsThere(int dishNum){
+    node* current = root;
+    if (current->dishNumber == dishNum)
+        return true;
+    while(current != nullptr){
+        current = current->leftchild;
+        if (current->dishNumber == dishNum)
+            return true;
+    }
+    //TODO complete traverse
+    return false
+}
+
+void BinarySearchTree::Display(){
+    //TODO build string and display
+}
