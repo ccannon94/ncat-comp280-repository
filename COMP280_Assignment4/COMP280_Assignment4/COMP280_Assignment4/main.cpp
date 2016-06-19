@@ -3,7 +3,6 @@
 //  COMP280_Assignment4
 //
 //  Created by Christopher Cannon on 6/19/16.
-//  Copyright © 2016 Christopher Cannon. All rights reserved.
 //
 
 #include <iostream>
