@@ -13,12 +13,13 @@ BinarySearchTree::BinarySearchTree(){
     root->counter = 0;
     root->leftchild = root->rightchild = nullptr;
     
-    int friedChickenCounter = 0;
-    int porkChopsCounter = 0;
-    int bakedChickenCounter = 0;
-    int grillSalmonCounter = 0;
-    int roastBeefCounter = 0;
-    int meatLoafCounter = 0;
+    friedChickenCounter = 0;
+    porkChopsCounter = 0;
+    bakedChickenCounter = 0;
+    grilledSalmonCounter = 0;
+    roastBeefCounter = 0;
+    grilledSteakCounter = 0;
+    meatLoafCounter = 0;
 }
 
 bool BinarySearchTree::empty(){
@@ -84,7 +85,7 @@ void BinarySearchTree::Display(){
     std::cout<<"3 - Baked Chicken: "<<bakedChickenCounter<<" order/s"<<std::endl;
     std::cout<<"4 - Grilled Salmon: "<<grilledSalmonCounter<<" order/s"<<std::endl;
     std::cout<<"5 - Roast Beef: "<<roastBeefCounter<<" order/s"<<std::endl;
-    std::cout<<"6 - Grilled Stead: "<<grilledSteakCounter<<" order/s"<<std::endl;
+    std::cout<<"6 - Grilled Steak: "<<grilledSteakCounter<<" order/s"<<std::endl;
     std::cout<<"7 - Meat Loaf: "<<meatLoafCounter<<" order/s"<<std::endl;
 }
 

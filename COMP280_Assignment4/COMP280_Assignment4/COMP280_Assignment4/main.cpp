@@ -11,5 +11,20 @@
 int main() {
     BinarySearchTree myOrders;
     
+    myOrders.Insert(4);
+    myOrders.Insert(3);
+    myOrders.Insert(2);
+    myOrders.Insert(3);
+    myOrders.Insert(7);
+    myOrders.Insert(2);
+    myOrders.Insert(2);
+    myOrders.Insert(5);
+    myOrders.Insert(2);
+    myOrders.Insert(1);
+    myOrders.Insert(3);
+    myOrders.Insert(3);
+    myOrders.Insert(5);
+    myOrders.Insert(5);
     
+    myOrders.Display();
 }
