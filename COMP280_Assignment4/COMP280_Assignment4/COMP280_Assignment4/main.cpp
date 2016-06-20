@@ -6,7 +6,10 @@
 //
 
 #include <iostream>
+#include "BinarySearchTree.h"
 
-int main(int argc, const char * argv[]) {
+int main() {
+    BinarySearchTree myOrders;
+    
     
 }
