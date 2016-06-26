@@ -19,8 +19,9 @@ int main() {
     
     Graph myGraph(n);
     int exitCode = 0;
+    int selection = 0;
     while(exitCode != 1){
-        int selection = 0;
+        selection = 0;
         std::cout<<"Undirected Graph Program"<<std::endl;
         std::cout<<std::endl;
         std::cout<<"Select an item from the menu below:"<<std::endl;
@@ -56,8 +57,9 @@ int main() {
                 break;
             case 4:
                 std::cout<<std::endl;
-                std::cout<<"Sorry, this feature isn't implemented";
-                //TODO option 4
+                std::cout<<"Enter the vertex you would like to examine:"<<std::endl;
+                std::cin>>v;
+                myGraph.PrintAdjacent(v);
                 break;
             case 5:
                 std::cout<<std::endl;

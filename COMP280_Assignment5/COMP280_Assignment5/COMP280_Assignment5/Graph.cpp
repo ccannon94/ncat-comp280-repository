@@ -46,8 +46,8 @@ int Graph::PrintAdjacent(int v)
     //increments through the row associated with vertex v
     for(int i = 0; i < n; i++){
         //if an edge exists, set a bit to 1 at that position and print a 1
-        if(matrix[v][n] == 1){
-            output += 1 << (n-i);
+        if(matrix[v][i] == 1){
+            //output += 1 << (n-i);
             std::cout<<1;
         }
         //otherwise, print a 0
