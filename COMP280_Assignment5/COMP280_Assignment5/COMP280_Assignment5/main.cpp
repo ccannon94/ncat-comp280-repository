@@ -36,19 +36,23 @@ int main() {
         
         std::cin>>selection;
         
+        int v, w;
         switch (selection) {
             case 1:
-                int v, w;
                 std::cout<<std::endl;
                 std::cout<<"Enter the verticies you would like to connect:"<<std::endl;
                 std::cin>>v>>w;
                 myGraph.AddEdge(v, w);
                 break;
             case 2:
-                //TODO option 2
+                std::cout<<std::endl;
+                std::cout<<"Enter the verticies you would like to disconnect:"<<std::endl;
+                std::cin>>v>>w;
+                myGraph.DeleteEdge(v, w);
                 break;
             case 3:
-                //TODO option 3
+                std::cout<<std::endl;
+                myGraph.PrintMatrix();
                 break;
             case 4:
                 //TODO option 4
@@ -71,5 +75,8 @@ int main() {
             default:
                 break;
         }
+        
+        std::cout<<std::endl;
+        std::cout<<std::endl;
     }
 }
