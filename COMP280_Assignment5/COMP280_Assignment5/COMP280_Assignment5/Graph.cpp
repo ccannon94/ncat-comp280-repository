@@ -37,3 +37,13 @@ int Graph::PrintAdjacent(int v)
         
     return output;
 }
+
+void Graph::PrintMatrix()
+{
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            std::cout<<matrix[i][j];
+        }
+        std::cout<<std::endl;
+    }
+}
