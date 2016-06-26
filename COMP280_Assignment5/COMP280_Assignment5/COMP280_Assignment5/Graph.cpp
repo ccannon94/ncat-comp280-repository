@@ -7,6 +7,7 @@
 
 #include "Graph.h"
 
+//initializes the number of verticies to v, and fills matrix with zeros
 Graph::Graph(int v)
 {
     n = v;
@@ -17,12 +18,16 @@ Graph::Graph(int v)
     }
 }
 
+//add an edge between v and w
 void Graph::AddEdge(int v, int w)
 {
     matrix[v][w] = 1;
     matrix[w][v] = 1;
 }
 
+
+
+//print all verticies that are adjacent to v
 int Graph::PrintAdjacent(int v)
 {
     int output = 0;
@@ -38,6 +43,7 @@ int Graph::PrintAdjacent(int v)
     return output;
 }
 
+//print the content of the adjacency matrix with one row per line of output
 void Graph::PrintMatrix()
 {
     for(int i = 0; i < n; i++){
