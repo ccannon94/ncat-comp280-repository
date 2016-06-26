@@ -56,26 +56,30 @@ int main() {
                 break;
             case 4:
                 std::cout<<std::endl;
+                std::cout<<"Sorry, this feature isn't implemented";
                 //TODO option 4
                 break;
             case 5:
                 std::cout<<std::endl;
+                std::cout<<"Sorry, this feature isn't implemented";
                 //TODO option 5
                 break;
             case 6:
                 std::cout<<std::endl;
+                std::cout<<"Sorry, this feature isn't implemented";
                 //TODO option 6
                 break;
             case 7:
                 std::cout<<std::endl;
+                std::cout<<"Sorry, this feature isn't implemented";
                 //TODO option 7
                 break;
             case 8:
                 std::cout<<std::endl;
+                std::cout<<"Sorry, this feature isn't implemented";
                 //TODO option 8
                 break;
             case 9:
-                std::cout<<std::endl;
                 exitCode = 1;
                 break;
             default:
