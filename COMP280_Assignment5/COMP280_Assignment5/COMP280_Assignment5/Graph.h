@@ -5,7 +5,7 @@
 //  Created by Christopher Cannon on 6/26/16.
 //
 
-#include <stdio.h>
+#include <iostream>
 
 const int MAX = 100;
 

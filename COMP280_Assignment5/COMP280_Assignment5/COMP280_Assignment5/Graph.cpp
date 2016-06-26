@@ -23,4 +23,17 @@ void Graph::AddEdge(int v, int w)
     matrix[w][v] = 1;
 }
 
-
+int Graph::PrintAdjacent(int v)
+{
+    int output = 0;
+    for(int i = 0; i < n; i++){
+        if(matrix[v][n] == 1){
+            output += 1 << (n-i);
+            std::cout<<1;
+        }else{
+            std::cout<<0;
+        }
+    }
+        
+    return output;
+}
