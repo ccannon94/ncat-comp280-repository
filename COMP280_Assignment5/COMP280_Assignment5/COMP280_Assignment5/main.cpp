@@ -6,8 +6,18 @@
 //
 
 #include <iostream>
+#include "Graph.h"
 
 int main() {
+    int n = 0;
+    std::cout<<"Undirected Graph Program"<<std::endl;
+    std::cout<<std::endl;
+    std::cout<<"Enter the number of verticies for your graph:"<<std::endl;
+    std::cin>>n;
+    std::cout<<std::endl;
+    std::cout<<std::endl;
+    
+    Graph myGraph(n);
     int exitCode = 0;
     while(exitCode != 1){
         int selection = 0;
@@ -28,7 +38,11 @@ int main() {
         
         switch (selection) {
             case 1:
-                //TODO option 1
+                int v, w;
+                std::cout<<std::endl;
+                std::cout<<"Enter the verticies you would like to connect:"<<std::endl;
+                std::cin>>v>>w;
+                myGraph.AddEdge(v, w);
                 break;
             case 2:
                 //TODO option 2
