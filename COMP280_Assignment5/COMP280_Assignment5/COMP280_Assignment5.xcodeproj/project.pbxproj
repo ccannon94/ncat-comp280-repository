@@ -27,7 +27,7 @@
 		4B2214051D2065DF008F6479 /* COMP280_Assignment5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = COMP280_Assignment5; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2214081D2065DF008F6479 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4B22140F1D206667008F6479 /* Graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Graph.cpp; sourceTree = "<group>"; };
-		4B2214101D206667008F6479 /* Graph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
+		4B2214101D206667008F6479 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			children = (
 				4B2214081D2065DF008F6479 /* main.cpp */,
 				4B22140F1D206667008F6479 /* Graph.cpp */,
-				4B2214101D206667008F6479 /* Graph.hpp */,
+				4B2214101D206667008F6479 /* Graph.h */,
 			);
 			path = COMP280_Assignment5;
 			sourceTree = "<group>";
