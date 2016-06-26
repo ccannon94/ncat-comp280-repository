@@ -15,11 +15,12 @@ Graph::Graph(int v)
         for(int j = 0; j < n; j++)
             matrix[i][j] = 0;
     }
-    
 }
 
 void Graph::AddEdge(int v, int w)
 {
-    
+    matrix[v][w] = 1;
+    matrix[w][v] = 1;
 }
+
 
