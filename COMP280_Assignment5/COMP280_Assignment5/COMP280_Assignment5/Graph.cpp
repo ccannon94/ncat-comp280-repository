@@ -25,7 +25,12 @@ void Graph::AddEdge(int v, int w)
     matrix[w][v] = 1;
 }
 
-
+//delete the edge between v and w
+void Graph::DeleteEdge(int v, int w)
+{
+    matrix[v][w] = 0;
+    matrix[w][v] = 0;
+}
 
 //print all verticies that are adjacent to v
 int Graph::PrintAdjacent(int v)
